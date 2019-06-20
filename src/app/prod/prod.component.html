@@ -1,0 +1,13 @@
+<button  class="btn btn-success" (click)="getEmployees()">Success</button>
+<button  class="btn btn-success" (click)="insertEmployees()">insert</button>
+
+<p >{{ disp }}</p>
+
+<ul>
+    <li *ngFor="let product of products" >
+      -- id: {{product._id}}
+      -- name: {{product.name}}
+      -- position: {{product.position}}
+      -- department: {{product.department}}
+    </li>
+  </ul> 
